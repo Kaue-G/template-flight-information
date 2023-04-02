@@ -5,6 +5,7 @@ import Intro from '../intro';
 import Main from '../main';
 import i18n from '../../i18n';
 import './style.sass';
+import ThemeContextParent from '../../contexts/themeContext';
 
 // console.log(U, Loader)
 
@@ -36,17 +37,19 @@ function App() {
 
   return (
     <I18nextProvider i18n={i18n}>
-      <Loader
-        placeholder={<Intro />}
-        fonts={fonts}
-        images={images}
-        minDuration={MIN_LOADING_DURATION}
-        tasks={tasks}
-      >
-        <div className={`app fade-in ${screenFormat}`}>
-          <Main />
-        </div>
-      </Loader>
+      <ThemeContextParent>
+        <Loader
+          placeholder={<Intro />}
+          fonts={fonts}
+          images={images}
+          minDuration={MIN_LOADING_DURATION}
+          tasks={tasks}
+        >
+          <div className={`app fade-in ${screenFormat}`}>
+            <Main />
+          </div>
+        </Loader>
+      </ThemeContextParent>
     </I18nextProvider>
   );
 }

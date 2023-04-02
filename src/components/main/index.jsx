@@ -1,10 +1,12 @@
+import { useContext } from 'react';
 import './style.sass';
+import { ThemeContext } from '../../contexts/themeContext';
 
 function Main() {
-  // eslint-disable-next-line no-console
-  console.log('chegamos aqui');
+  const { globalTheme } = useContext(ThemeContext);
+
   return (
-    <div className="main">
+    <div className={`main ${globalTheme}`}>
       <header>
         <section>
           <h1>Departures</h1>
