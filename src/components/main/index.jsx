@@ -1,9 +1,13 @@
 import { useContext } from 'react';
 import './style.sass';
+import { format, parseISO } from 'date-fns';
+import { useTemplateVal } from '@dsplay/react-template-utils';
 import { ThemeContext } from '../../contexts/themeContext';
 
 function Main() {
   const { globalTheme } = useContext(ThemeContext);
+
+  const flightList = useTemplateVal('flightList', '');
 
   return (
     <div className={`main ${globalTheme}`}>
@@ -13,7 +17,7 @@ function Main() {
           <img src="" alt="" />
         </section>
         <section>
-          <h1>La Guardia (LGA)</h1>
+          <h1>{flightList.airportName}</h1>
         </section>
       </header>
       <section className="table">
@@ -29,110 +33,20 @@ function Main() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
-            <tr>
-              <td>Nashville</td>
-              <td>4680</td>
-              <td>AIRLENE PHOTO</td>
-              <td>3:30 PM</td>
-              <td>Term B - 43</td>
-              <td>On Time</td>
-            </tr>
+            {
+              flightList.flights.map((flight) => (
+                <tr key={flight.flight}>
+                  <td>{flight.destinations}</td>
+                  <td>{flight.flight}</td>
+                  <td>{flight.airline}</td>
+                  <td>
+                    {format(parseISO(flight.departureTime), 'HH:mm a')}
+                  </td>
+                  <td>{flight.gate}</td>
+                  <td>{flight.status}</td>
+                </tr>
+              ))
+            }
           </tbody>
         </table>
       </section>
