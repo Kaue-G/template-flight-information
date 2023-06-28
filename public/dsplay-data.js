@@ -1,3 +1,8 @@
+/* eslint-disable quote-props */
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
+/* eslint-disable indent */
+/* eslint-disable no-var */
 var dsplay_config = {
     // config parameters
     locale: 'pt_br',
@@ -9,23 +14,21 @@ var dsplay_config = {
 };
 
 var dsplay_media = {
-    duration: 30000,
-
     // for json service based media
-    result: { "validity": "2018-08-13T18:22:55.238Z", "showOutdated": true, "data": {} },
-
+    // result: { "validity": "2018-08-13T18:22:55.238Z", "showOutdated": true, "data": {} },
     // custom media parameters
-    customMediaParam: "value",
+    // customMediaParam: "value",
+
+    duration: 30000,
 };
 
 var dsplay_template = {
     // template parameter
+    // template_var: "My Template Var",
+    // logo: '../test-assets/dsplay-logo.png',
+    // title: "My Super Template",
+    // expanded: "false",
 
-    template_var: "My Template Var",
-
-    logo: '../test-assets/dsplay-logo.png',
-
-    title: "My Super Template",
-    expanded: "false",
-
+    // values for themeChoice-> " 1, 2, 3, 4"
+    themeChoice: '',
 };

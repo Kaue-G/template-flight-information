@@ -1,22 +1,40 @@
-import { createContext, useState } from 'react';
-
-export const DEFAULT_THEME = 'theme-01';
-export const SECOND_THEME = 'theme-02';
-export const THIRD_THEME = 'theme-03';
-export const FOURTH_THEME = 'theme-04';
+/* eslint-disable no-unused-vars */
+import { createContext, useEffect, useState } from 'react';
+import {
+  useTemplateVal,
+} from '@dsplay/react-template-utils';
 
 export const ThemeContext = createContext({
   globalTheme: '',
-  setGlobalTheme: () => { },
 });
 
 const ThemeContextParent = (props) => {
-  const [theme, setTheme] = useState(DEFAULT_THEME);
+  const themeChoice = useTemplateVal('themeChoice', '');
+  let activeTheme = '';
+
+  switch (themeChoice) {
+    case '1':
+      activeTheme = 'theme-01';
+      break;
+    case '2':
+      activeTheme = 'theme-02';
+      break;
+    case '3':
+      activeTheme = 'theme-03';
+      break;
+    case '4':
+      activeTheme = 'theme-04';
+      break;
+    default:
+      activeTheme = 'theme-01';
+      break;
+  }
+
+  // const theme = activeTheme;
   const { children } = props;
 
   const value = {
-    globalTheme: theme,
-    setGlobalTheme: setTheme,
+    globalTheme: activeTheme,
   };
 
   return (
