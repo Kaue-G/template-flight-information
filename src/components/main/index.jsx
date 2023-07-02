@@ -47,7 +47,13 @@ function Main() {
                   >
                     <td>{flight.destinations}</td>
                     <td>{flight.flight}</td>
-                    <td>{flight.airline}</td>
+                    <td>
+                      <img
+                        src={flight.airline}
+                        alt="Airline"
+                        className="airline-img"
+                      />
+                    </td>
                     <td>
                       {format(parseISO(flight.departureTime), 'HH:mm a')}
                     </td>
