@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import './style.sass';
 import { format, parseISO } from 'date-fns';
 import { useTemplateVal } from '@dsplay/react-template-utils';
+import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../contexts/themeContext';
 
 function Main() {
@@ -9,11 +10,13 @@ function Main() {
 
   const flightList = useTemplateVal('flightList', '');
 
+  const { t } = useTranslation();
+
   return (
     <div className={`main ${globalTheme}`}>
       <header>
         <section>
-          <h1>Departures</h1>
+          <h1>{flightList.departuresOrArrivals}</h1>
           <img src="" alt="" />
         </section>
         <section>
@@ -24,34 +27,43 @@ function Main() {
         <table>
           <thead>
             <tr>
-              <th>Destinations</th>
-              <th>Flight</th>
-              <th>Airline</th>
-              <th>Departure Time</th>
-              <th>Gate</th>
-              <th>Status</th>
+              <th>{t('destinations')}</th>
+              <th>{t('flight')}</th>
+              <th>{t('airline')}</th>
+              <th>{t('time')}</th>
+              <th>{t('gate')}</th>
+              <th>{t('status')}</th>
             </tr>
           </thead>
           <tbody>
             {
-              flightList.flights.map((flight) => (
-                <tr key={flight.flight}>
-                  <td>{flight.destinations}</td>
-                  <td>{flight.flight}</td>
-                  <td>{flight.airline}</td>
-                  <td>
-                    {format(parseISO(flight.departureTime), 'HH:mm a')}
-                  </td>
-                  <td>{flight.gate}</td>
-                  <td>{flight.status}</td>
-                </tr>
-              ))
+              flightList.flights.map((flight, index) => {
+                const tr = (index % 2 === 0) ? '' : 'line-color';
+
+                return (
+                  <tr
+                    key={flight.flight + flight.airline}
+                    className={tr}
+                  >
+                    <td>{flight.destinations}</td>
+                    <td>{flight.flight}</td>
+                    <td>{flight.airline}</td>
+                    <td>
+                      {format(parseISO(flight.departureTime), 'HH:mm a')}
+                    </td>
+                    <td>{flight.gate}</td>
+                    <td>{flight.status}</td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
       </section>
       <footer>
-        Update 4:15 PM Tuesday May 17, 2022
+        {t('update')}
+        {' '}
+        {format(parseISO(flightList.lastUpdate), 'HH:mm a EEEE MMM dd, yyyy')}
       </footer>
     </div>
 
