@@ -35,6 +35,7 @@ var dsplay_template = {
         airportName: 'F.Noronha',
         lastUpdate: '2024-01-01T03:30',
         departuresOrArrivals: 'Departures',
+        planePicture: 'https://cdn.pixabay.com/photo/2014/04/03/10/52/aeroplane-311601_1280.png',
         flights: [
             {
                 destinations: 'Nashville',

@@ -17,7 +17,7 @@ function Main() {
       <header>
         <section>
           <h1>{flightList.departuresOrArrivals}</h1>
-          <img src="" alt="" />
+          <img src={flightList.planePicture} alt="" />
         </section>
         <section>
           <h1>{flightList.airportName}</h1>
