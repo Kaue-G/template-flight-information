@@ -32,7 +32,9 @@ var dsplay_template = {
     // values for themeChoice-> " 1, 2, 3, 4"
     themeChoice: '',
     flightList: {
-        airportName: '',
+        airportName: 'F.Noronha',
+        lastUpdate: '2024-01-01T03:30',
+        departuresOrArrivals: 'Departures',
         flights: [
             {
                 destinations: 'Nashville',
@@ -44,7 +46,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4681',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -52,7 +54,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4682',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -60,7 +62,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4683',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -68,7 +70,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4684',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -76,7 +78,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4685',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T13:30',
                 gate: 'Term B - 43',
@@ -84,7 +86,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4686',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -92,7 +94,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4687',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -100,7 +102,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4688',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -108,7 +110,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4689',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -116,7 +118,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4690',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -124,7 +126,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4691',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -132,7 +134,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4692',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -140,7 +142,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '4693',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -148,7 +150,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '46894',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
@@ -156,7 +158,7 @@ var dsplay_template = {
             },
             {
                 destinations: 'Nashville',
-                flight: '4680',
+                flight: '46895',
                 airline: 'Airline photo link',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
