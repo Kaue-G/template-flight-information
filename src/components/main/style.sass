@@ -74,8 +74,8 @@
 
 header
   width: 100%
-  height: 8Vh
-  padding-left: 2rem
+  // height: 8Vh
+  padding: 0.7rem 0 0.7rem 2rem
   display: flex
 
   font-size: 2.2rem
@@ -92,8 +92,12 @@ header
   section:last-child
     width: 90%
     display: flex
-    justify-content: center
+    justify-content: space-evenly
     align-items: center
+
+    img
+      margin-left: 10px
+      max-width: 7vh
 
 .table
   height: 84Vh
@@ -107,8 +111,8 @@ header
     font-size: 2rem
     thead
       tr
-        height: 3rem
         th
+          padding: 0.5rem 0
           text-align: start
 
         th:first-child
@@ -116,18 +120,18 @@ header
 
     tbody
       tr
-        height: 4rem
+        // height: 4rem
 
         td:first-child
-          padding-left: 2rem
+          padding: 0.5rem 0 0.5rem 2rem
 
 .airline-img
   max-height: 3rem
 
 footer
   height: 8Vh
-  padding: 0.8rem 0 0 2rem
-  font-size: 2.2rem
+  padding: 1rem 0 0 2rem
+  font-size: 1.5rem
 
 @media only screen and (min-width: 1950px)
   header
@@ -153,7 +157,7 @@ footer
       font-size: 1.6rem
       thead
         tr
-          height: 2rem
+          // height: 2rem
       tbody
         tr
           height: 2rem !important
@@ -162,7 +166,7 @@ footer
     max-height: 2rem
 
   footer
-    font-size: 1.5rem
+    font-size: 1.2rem
 
 @media only screen and (max-width: 1200px)
   header
@@ -180,7 +184,7 @@ footer
     max-height: 1.8rem
 
   footer
-    font-size: 1.3rem
+    font-size: 1rem
 
 @media only screen and (max-width: 1000px)
   header
@@ -194,7 +198,7 @@ footer
     max-height: 1.6rem
 
   footer
-    font-size: 1.1rem
+    font-size: 0.8rem
     padding-top: 0.5rem
 
 @media only screen and (max-width: 700px)
@@ -209,5 +213,5 @@ footer
     max-height: 1.4rem
 
   footer
-    font-size: 1rem
+    font-size: 0.6rem
     padding-top: 0.2rem

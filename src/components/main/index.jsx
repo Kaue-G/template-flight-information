@@ -21,6 +21,7 @@ function Main() {
         </section>
         <section>
           <h1>{flightList.airportName}</h1>
+          <img src={flightList.logoPicture} alt="" />
         </section>
       </header>
       <section className="table">
