@@ -5,36 +5,37 @@ import {
 } from '@dsplay/react-template-utils';
 
 export const ThemeContext = createContext({
-  globalTheme: '',
+  globalTheme: {
+    primaryColor: '',
+    secondaryColor: '',
+    lineColor: '',
+  },
 });
 
 const ThemeContextParent = (props) => {
-  const themeChoice = useTemplateVal('themeChoice', '');
-  let activeTheme = '';
+  const theme = useTemplateVal('theme', '');
 
-  switch (themeChoice) {
-    case 'theme_1':
-      activeTheme = 'theme-01';
-      break;
-    case 'theme_2':
-      activeTheme = 'theme-02';
-      break;
-    case 'theme_3':
-      activeTheme = 'theme-03';
-      break;
-    case 'theme_4':
-      activeTheme = 'theme-04';
-      break;
-    default:
-      activeTheme = 'theme-01';
-      break;
+  if (!theme.primaryColor) {
+    theme.primaryColor = '#008c9e';
+  }
+
+  if (!theme.secondaryColor) {
+    theme.secondaryColor = '#005f6b';
+  }
+
+  if (!theme.lineColor) {
+    theme.lineColor = '#cecece';
   }
 
   // const theme = activeTheme;
   const { children } = props;
 
   const value = {
-    globalTheme: activeTheme,
+    globalTheme: {
+      primaryColor: theme.primaryColor,
+      secondaryColor: theme.secondaryColor,
+      lineColor: theme.lineColor,
+    },
   };
 
   return (

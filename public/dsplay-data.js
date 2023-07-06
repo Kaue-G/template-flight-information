@@ -29,8 +29,11 @@ var dsplay_template = {
     // title: "My Super Template",
     // expanded: "false",
 
-    // values for themeChoice-> " theme_1, theme_2, theme_3, theme_4"
-    themeChoice: 'theme_1',
+    theme: {
+        primaryColor: '',
+        secondaryColor: '',
+        lineColor: '',
+    },
     flightList: {
         airportName: 'F.Noronha',
         lastUpdate: '2024-01-01T03:30',

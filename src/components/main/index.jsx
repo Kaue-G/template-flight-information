@@ -13,8 +13,8 @@ function Main() {
   const { t } = useTranslation();
 
   return (
-    <div className={`main ${globalTheme}`}>
-      <header>
+    <div className="main">
+      <header style={{ backgroundColor: globalTheme.primaryColor }}>
         <section>
           <div id="logo">
             <img src={flightList.logoPicture} alt="" />
@@ -31,7 +31,7 @@ function Main() {
       <section className="table">
         <table>
           <thead>
-            <tr>
+            <tr style={{ backgroundColor: globalTheme.secondaryColor }}>
               <th>{t('destination')}</th>
               <th>{t('flight')}</th>
               <th>{t('airline')}</th>
@@ -43,12 +43,12 @@ function Main() {
           <tbody>
             {
               flightList.flights.map((flight, index) => {
-                const tr = (index % 2 === 0) ? '' : 'line-color';
+                const tr = (index % 2 === 0) ? '' : globalTheme.lineColor;
 
                 return (
                   <tr
                     key={flight.flight + flight.airline}
-                    className={tr}
+                    style={{ backgroundColor: tr }}
                   >
                     <td>{flight.destination}</td>
                     <td>{flight.flight}</td>
@@ -71,7 +71,7 @@ function Main() {
           </tbody>
         </table>
       </section>
-      <footer>
+      <footer style={{ backgroundColor: globalTheme.secondaryColor }}>
         {t('update')}
         {' '}
         {format(parseISO(flightList.lastUpdate), 'HH:mm a EEEE MMM dd, yyyy')}
