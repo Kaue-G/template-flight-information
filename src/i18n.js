@@ -17,7 +17,7 @@ i18n
         translations: {
           locale: enUS,
           Title: 'Title',
-          destinations: 'Destinations',
+          destination: 'Destination',
           flight: 'Flight',
           airline: 'Airline',
           time: 'Time',
@@ -29,7 +29,7 @@ i18n
       pt: {
         translations: {
           locale: ptBR,
-          destinations: 'Destinos',
+          destination: 'Destinos',
           flight: 'Voos',
           airline: 'Companhia aérea',
           time: 'Hora',
@@ -41,7 +41,7 @@ i18n
       fr: {
         translations: {
           locale: fr,
-          destinations: 'Destinations',
+          destination: 'Destination',
           flight: 'Vols',
           airline: 'Compagnie aérienne',
           time: 'Heure de départ',
@@ -53,7 +53,7 @@ i18n
       de: {
         translations: {
           locale: de,
-          destinations: 'Reiseziele',
+          destination: 'Reiseziele',
           flight: 'Flüge',
           airline: 'Stunde',
           time: 'Abfahrtszeit',
@@ -65,7 +65,7 @@ i18n
       es: {
         translations: {
           locale: es,
-          destinations: 'Destinos',
+          destination: 'Destinos',
           flight: 'Vuelos',
           airline: 'Aerolínea',
           time: 'Hora',
@@ -77,7 +77,7 @@ i18n
       it: {
         translations: {
           locale: it,
-          destinations: 'Destinazioni',
+          destination: 'Destinazioni',
           flight: 'Voli',
           airline: 'Compagnia aerea',
           time: 'orario',
@@ -89,7 +89,7 @@ i18n
       nl: {
         translations: {
           locale: nl,
-          destinations: 'Bestemmingen',
+          destination: 'Bestemmingen',
           flight: 'Vluchten',
           airline: 'Luchtvaartmaatschappij',
           time: 'tijd',

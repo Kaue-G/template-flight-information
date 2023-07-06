@@ -13,16 +13,16 @@ const ThemeContextParent = (props) => {
   let activeTheme = '';
 
   switch (themeChoice) {
-    case '1':
+    case 'theme_1':
       activeTheme = 'theme-01';
       break;
-    case '2':
+    case 'theme_2':
       activeTheme = 'theme-02';
       break;
-    case '3':
+    case 'theme_3':
       activeTheme = 'theme-03';
       break;
-    case '4':
+    case 'theme_4':
       activeTheme = 'theme-04';
       break;
     default:

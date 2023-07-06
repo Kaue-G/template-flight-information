@@ -16,19 +16,23 @@ function Main() {
     <div className={`main ${globalTheme}`}>
       <header>
         <section>
-          <h1>{flightList.departuresOrArrivals}</h1>
-          <img src={flightList.planePicture} alt="" />
+          <div id="logo">
+            <img src={flightList.logoPicture} alt="" />
+          </div>
+          <div>
+            <h1>{flightList.departuresOrArrivals}</h1>
+            <img src={flightList.planePicture} alt="" />
+          </div>
         </section>
         <section>
           <h1>{flightList.airportName}</h1>
-          <img src={flightList.logoPicture} alt="" />
         </section>
       </header>
       <section className="table">
         <table>
           <thead>
             <tr>
-              <th>{t('destinations')}</th>
+              <th>{t('destination')}</th>
               <th>{t('flight')}</th>
               <th>{t('airline')}</th>
               <th>{t('time')}</th>
@@ -46,7 +50,7 @@ function Main() {
                     key={flight.flight + flight.airline}
                     className={tr}
                   >
-                    <td>{flight.destinations}</td>
+                    <td>{flight.destination}</td>
                     <td>{flight.flight}</td>
                     <td>
                       <img
