@@ -21,18 +21,38 @@ This template has some configuration variables as the following table shows:
 
 | Variable              | Type    | Default    | Description                                        |
 |-----------------------|---------|------------| ---------------------------------------------------|
-| `themeChoice`            | text   | none       | themes, values ["theme_1", "theme_2", "theme_3", "theme_4"] (Default "theme_1")                                   |
-| `flightList`          | list   | [{},{}]    | flight list    |
+| `theme`            | object   | { primaryColor, secondaryColor, lineColor }       | template colors                                  |
+| `aiirlineInformation`          | object   | { airportName, lastUpdate, departureOrArrivals, planePicture, logoPicure, flights }    | arline information and flight list    |
 
-Flight List [...]
+Theme {...}
+| Variable              | Type    | Default    | Description                                        |
+|-----------------------|---------|------------| ---------------------------------------------------|
+| `primaryColor`        | text   | ""    | primary color    |
+| `secondaryColor`        | text   | ""    | secondary color    |
+| `lineColor`        | text   | ""    | line color    |
+
+
+Airline information [...]
 |Attributes             | Type    | Example    | Description                                        |
 |-----------------------|---------|------------| ---------------------------------------------------|
-| `destination`          | text   | 'Nashville'    | destinations.                                |
-| `flight`          | text   | '0000'    | flight number    |
-| `airline`          | text   | 'https://www.urlExample.com'    | image link    |
-| `departureTime`          | text   | '2023-06-05T10:16'    | datetime, iso format    |
-| `gate`          | text   | 'Term B - 52'    | gate description    |
-| `status`          | text   | 'on time'    | flight status    |
+| `airportName`         | text   | "F.Noronha"    | flight list    |
+| `lastUpdate`          | text   | "2024-01-01T02:30"    | datetime, iso format    |
+| `departuresOrArrivals`| text   | "Departures"    | Departure or Arrival information    |
+| `planePicture`        | text   | "https://www.urlExample.com"    | plane picture    |
+| `logoPicture` | text   | "https://www.urlExample.com" | logo picture |
+| `flights`  | list   | [{ destination, flight, airline, departureTime, gate, status }]    | flight list and their informations    |
+
+
+
+Flights [...]
+|Attributes             | Type    | Example    | Description                                        |
+|-----------------------|---------|------------| ---------------------------------------------------|
+| `destination`          | text   | "Nashville"    | destinations.                                |
+| `flight`          | text   | "0000"    | flight number    |
+| `airline`          | text   | "https://www.urlExample.com"    | image link    |
+| `departureTime`          | text   | "2023-06-05T10:16"    | datetime, iso format    |
+| `gate`          | text   | "Term B - 52"    | gate description    |
+| `status`          | text   | "on time"    | flight status    |
 
 
 ## Getting started

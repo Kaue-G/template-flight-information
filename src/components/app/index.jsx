@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { Loader, useScreenInfo, useTemplateVal } from '@dsplay/react-template-utils';
 import Intro from '../intro';
@@ -30,10 +29,15 @@ const tasks = [
 
 function App() {
   const { screenFormat } = useScreenInfo();
-  const logo = useTemplateVal('logo');
 
   // images to preload
-  const images = useMemo(() => [logo], [logo]);
+  const airlineInformation = useTemplateVal('airlineInformation', '');
+  const images = [
+    airlineInformation.planePicture,
+    airlineInformation.logoPicture,
+  ];
+
+  airlineInformation.flights.map((item) => images.push(item.airline));
 
   return (
     <I18nextProvider i18n={i18n}>

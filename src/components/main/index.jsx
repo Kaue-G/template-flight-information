@@ -8,7 +8,7 @@ import { ThemeContext } from '../../contexts/themeContext';
 function Main() {
   const { globalTheme } = useContext(ThemeContext);
 
-  const flightList = useTemplateVal('flightList', '');
+  const airlineInformation = useTemplateVal('airlineInformation', '');
 
   const { t } = useTranslation();
 
@@ -17,15 +17,15 @@ function Main() {
       <header style={{ backgroundColor: globalTheme.primaryColor }}>
         <section>
           <div id="logo">
-            <img src={flightList.logoPicture} alt="" />
+            <img src={airlineInformation.logoPicture} alt="" />
           </div>
           <div>
-            <h1>{flightList.departuresOrArrivals}</h1>
-            <img src={flightList.planePicture} alt="" />
+            <h1>{airlineInformation.departuresOrArrivals}</h1>
+            <img src={airlineInformation.planePicture} alt="" />
           </div>
         </section>
         <section>
-          <h1>{flightList.airportName}</h1>
+          <h1>{airlineInformation.airportName}</h1>
         </section>
       </header>
       <section className="table">
@@ -42,7 +42,7 @@ function Main() {
           </thead>
           <tbody>
             {
-              flightList.flights.map((flight, index) => {
+              airlineInformation.flights.map((flight, index) => {
                 const tr = (index % 2 === 0) ? '' : globalTheme.lineColor;
 
                 return (
@@ -74,7 +74,7 @@ function Main() {
       <footer style={{ backgroundColor: globalTheme.secondaryColor }}>
         {t('update')}
         {' '}
-        {format(parseISO(flightList.lastUpdate), 'HH:mm a EEEE MMM dd, yyyy')}
+        {format(parseISO(airlineInformation.lastUpdate), 'HH:mm a EEEE MMM dd, yyyy')}
       </footer>
     </div>
 

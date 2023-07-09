@@ -34,7 +34,7 @@ var dsplay_template = {
         secondaryColor: '',
         lineColor: '',
     },
-    flightList: {
+    airlineInformation: {
         airportName: 'F.Noronha',
         lastUpdate: '2024-01-01T03:30',
         departuresOrArrivals: 'Departures',
