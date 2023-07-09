@@ -31,10 +31,12 @@ function App() {
   const { screenFormat } = useScreenInfo();
 
   // images to preload
+  const logoPicture = useTemplateVal('logoPicture', '');
   const airlineInformation = useTemplateVal('airlineInformation', '');
+
   const images = [
     airlineInformation.planePicture,
-    airlineInformation.logoPicture,
+    logoPicture,
   ];
 
   airlineInformation.flights.map((item) => images.push(item.airline));
