@@ -22,6 +22,7 @@ This template has some configuration variables as the following table shows:
 | Variable              | Type    | Default    | Description                                        |
 |-----------------------|---------|------------| ---------------------------------------------------|
 | `theme`            | object   | { primaryColor, secondaryColor, lineColor }       | template colors                                  |
+| `logoPicture` | text   | "https://www.urlExample.com" | logo picture |
 | `aiirlineInformation`          | object   | { airportName, lastUpdate, departureOrArrivals, planePicture, logoPicure, flights }    | arline information and flight list    |
 
 Theme {...}
@@ -39,7 +40,6 @@ Airline information [...]
 | `lastUpdate`          | text   | "2024-01-01T02:30"    | datetime, iso format    |
 | `departuresOrArrivals`| text   | "Departures"    | Departure or Arrival information    |
 | `planePicture`        | text   | "https://www.urlExample.com"    | plane picture    |
-| `logoPicture` | text   | "https://www.urlExample.com" | logo picture |
 | `flights`  | list   | [{ destination, flight, airline, departureTime, gate, status }]    | flight list and their informations    |
 
 

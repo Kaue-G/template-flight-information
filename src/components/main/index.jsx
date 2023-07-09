@@ -8,6 +8,7 @@ import { ThemeContext } from '../../contexts/themeContext';
 function Main() {
   const { globalTheme } = useContext(ThemeContext);
 
+  const logoPicture = useTemplateVal('logoPicture', '');
   const airlineInformation = useTemplateVal('airlineInformation', '');
 
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ function Main() {
       <header style={{ backgroundColor: globalTheme.primaryColor }}>
         <section>
           <div id="logo">
-            <img src={airlineInformation.logoPicture} alt="" />
+            <img src={logoPicture} alt="" />
           </div>
           <div>
             <h1>{airlineInformation.departuresOrArrivals}</h1>
