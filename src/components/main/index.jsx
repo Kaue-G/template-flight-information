@@ -27,7 +27,7 @@ function Main() {
             <>
               <section id="sectionHeader">
                 <div id="logo">
-                  <img src={logoPicture} alt="" />
+                  <img src={logoPicture === '' ? 'dsplayLogo.png' : logoPicture} alt="" />
                 </div>
                 <div>
                   <div>
