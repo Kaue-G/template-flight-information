@@ -4,6 +4,7 @@
   color: #fff
   display: flex
   flex-direction: column
+  text-transform: capitalize
 
 header
   width: 100%
@@ -186,13 +187,13 @@ footer
 
     #sectionHeader
       width: 100% !important
-
+      justify-content: space-between
+      
       #logo
         max-width: 40%
         margin: 10px
         img
-          // max-width: 10rem
-          // margin-left: 10px
+          max-width: 6rem
 
       >div:last-child
         width: 50%
@@ -213,8 +214,13 @@ footer
           th:first-child
             padding-left: 0.5rem
 
+          th
+            text-align: center
+
       tbody
         tr
+          text-align: center
+          border-bottom: 1px solid #adadad
           td:first-child
             padding-left: 0.5rem
 
@@ -225,3 +231,20 @@ footer
     font-size: 0.6rem
     padding-top: 0.8rem
     padding: 0.8rem 0 0 0.5rem
+
+@media only screen and (max-width: 500px)
+  header
+    font-size: 0.8rem
+    padding: 0.2rem
+
+    #sectionHeader
+      #logo
+        img
+          max-width: 5rem
+
+  .table
+    table
+      font-size: 0.7rem
+
+  .airline-img
+    max-height: 1.2rem

@@ -10,7 +10,7 @@ function Main() {
 
   const logoPicture = useTemplateVal('logoPicture', '');
   const airlineInformation = useTemplateVal('airlineInformation', '');
-
+  const viewWidth = window.innerWidth;
   const { t } = useTranslation();
 
   let { planePicture } = airlineInformation;
@@ -23,7 +23,7 @@ function Main() {
     <div className="main">
       <header style={{ backgroundColor: globalTheme.primaryColor }}>
         {
-          window.innerWidth < 700 ? (
+          viewWidth < 700 ? (
             <>
               <section id="sectionHeader">
                 <div id="logo">
@@ -73,27 +73,27 @@ function Main() {
           <tbody>
             {
               airlineInformation.flights.map((flight, index) => {
-                const tr = (index % 2 === 0) ? '' : globalTheme.lineColor;
+                const lineColor = (viewWidth < 700 || index % 2 !== 0) ? globalTheme.lineColor : '';
 
                 return (
                   <tr
                     key={flight.flight + flight.airline}
-                    style={{ backgroundColor: tr }}
+                    style={{ backgroundColor: viewWidth > 700 ? lineColor : '' }}
                   >
                     <td>{flight.destination}</td>
-                    <td>{flight.flight}</td>
+                    <td style={{ backgroundColor: viewWidth < 700 ? lineColor : '' }}>{flight.flight}</td>
                     <td>
                       <img
-                        src={flight.airline === '' ? 'assets/earth.png' : flight.airline}
+                        src={flight.airline === '' ? './assets/earth.png' : flight.airline}
                         alt="Airline"
                         className="airline-img"
                       />
                     </td>
-                    <td>
+                    <td style={{ backgroundColor: viewWidth < 700 ? lineColor : '' }}>
                       {format(parseISO(flight.departureTime), 'HH:mm a')}
                     </td>
                     <td>{flight.gate}</td>
-                    <td>{flight.status}</td>
+                    <td style={{ backgroundColor: viewWidth < 700 ? lineColor : '' }}>{flight.status}</td>
                   </tr>
                 );
               })

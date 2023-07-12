@@ -34,7 +34,7 @@ var dsplay_template = {
         secondaryColor: '',
         lineColor: '',
     },
-    logoPicture: 'dsplayLogo.png',
+    logoPicture: './dsplayLogo.png',
     airlineInformation: {
         airportName: 'Fernando de Noronha',
         lastUpdate: '2024-01-01T03:30',
@@ -44,7 +44,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46495',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -52,7 +52,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46595',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: '',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -60,7 +60,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4680',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -68,7 +68,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4681',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -76,7 +76,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4682',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -84,7 +84,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4683',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -92,7 +92,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4684',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -100,7 +100,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '41895',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -108,7 +108,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '42495',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -116,7 +116,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46542',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -124,7 +124,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '41295',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -132,7 +132,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4685',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T13:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -140,7 +140,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4686',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -148,7 +148,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4687',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -156,7 +156,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4688',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -164,7 +164,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4689',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -172,7 +172,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4690',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -180,7 +180,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4691',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -188,7 +188,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4692',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -196,7 +196,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '4693',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -204,7 +204,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46894',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -212,7 +212,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46895',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -220,7 +220,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46896',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -228,14 +228,14 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46897',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
             }, {
                 destination: 'Nashville',
                 flight: '46898',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -243,7 +243,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46899',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
@@ -251,7 +251,7 @@ var dsplay_template = {
             {
                 destination: 'Nashville',
                 flight: '46900',
-                airline: 'https://cdn.pixabay.com/photo/2015/03/07/15/28/wordpress-663144_1280.png',
+                airline: './assets/airways.png',
                 departureTime: '2024-01-01T03:30',
                 gate: 'Term B - 43',
                 status: 'on time',
