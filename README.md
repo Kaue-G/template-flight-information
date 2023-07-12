@@ -39,7 +39,7 @@ Airline information [...]
 | `airportName`         | text   | "F.Noronha"    | flight list    |
 | `lastUpdate`          | text   | "2024-01-01T02:30"    | datetime, iso format    |
 | `departuresOrArrivals`| text   | "Departures"    | Departure or Arrival information    |
-| `planePicture`        | text   | "https://www.urlExample.com"    | plane picture    |
+| `planePicture`        | text   | "up" or "down"    | plane picture    |
 | `flights`  | list   | [{ destination, flight, airline, departureTime, gate, status }]    | flight list and their informations    |
 
 

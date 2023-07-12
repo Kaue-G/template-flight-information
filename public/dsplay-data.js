@@ -34,12 +34,12 @@ var dsplay_template = {
         secondaryColor: '',
         lineColor: '',
     },
-    logoPicture: 'https://cdn.pixabay.com/photo/2017/03/31/23/11/robot-2192617_1280.png',
+    logoPicture: 'dsplayLogo.png',
     airlineInformation: {
-        airportName: 'F.Noronha',
+        airportName: 'Fernando de Noronha',
         lastUpdate: '2024-01-01T03:30',
         departuresOrArrivals: 'Departures',
-        planePicture: 'https://cdn.pixabay.com/photo/2014/04/03/10/52/aeroplane-311601_1280.png',
+        planePicture: '', // "up" or "down"
         flights: [
             {
                 destination: 'Nashville',

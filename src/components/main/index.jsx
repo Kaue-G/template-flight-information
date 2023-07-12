@@ -13,21 +13,50 @@ function Main() {
 
   const { t } = useTranslation();
 
+  let { planePicture } = airlineInformation;
+
+  if (planePicture !== 'up' && planePicture !== 'down') {
+    planePicture = 'up';
+  }
+
   return (
     <div className="main">
       <header style={{ backgroundColor: globalTheme.primaryColor }}>
-        <section>
-          <div id="logo">
-            <img src={logoPicture} alt="" />
-          </div>
-          <div>
-            <h1>{airlineInformation.departuresOrArrivals}</h1>
-            <img src={airlineInformation.planePicture} alt="" />
-          </div>
-        </section>
-        <section>
-          <h1>{airlineInformation.airportName}</h1>
-        </section>
+        {
+          window.innerWidth < 700 ? (
+            <>
+              <section id="sectionHeader">
+                <div id="logo">
+                  <img src={logoPicture} alt="" />
+                </div>
+                <div>
+                  <div>
+                    <h1>{airlineInformation.departuresOrArrivals}</h1>
+                    <img src={`assets/${planePicture}.png`} alt="" />
+                  </div>
+                  <div>
+                    <h1>{airlineInformation.airportName}</h1>
+                  </div>
+                </div>
+              </section>
+            </>
+          ) : (
+            <>
+              <section>
+                <div id="logo">
+                  <img src={logoPicture} alt="" />
+                </div>
+                <div>
+                  <h1>{airlineInformation.departuresOrArrivals}</h1>
+                  <img src={`assets/${planePicture}.png`} alt="" />
+                </div>
+              </section>
+              <section>
+                <h1>{airlineInformation.airportName}</h1>
+              </section>
+            </>
+          )
+        }
       </header>
       <section className="table">
         <table>
@@ -55,7 +84,7 @@ function Main() {
                     <td>{flight.flight}</td>
                     <td>
                       <img
-                        src={flight.airline}
+                        src={flight.airline === '' ? 'assets/earth.png' : flight.airline}
                         alt="Airline"
                         className="airline-img"
                       />

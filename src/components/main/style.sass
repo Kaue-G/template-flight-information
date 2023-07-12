@@ -7,8 +7,9 @@
 
 header
   width: 100%
-  padding: 0.7rem 0 0.7rem 2rem
+  padding: 0.7rem
   display: flex
+  justify-content: space-around
 
   font-size: 2.2rem
 
@@ -19,7 +20,6 @@ header
     align-items: center
 
     #logo
-      width: 30%
       background-color: #fff
 
       display: flex
@@ -29,23 +29,25 @@ header
       border-radius: 10px
 
       img
-        max-width: 7vh
+        max-width: 10rem
+
     div:last-child
       display: flex
       flex-direction: row
+      align-items: center
       img
         margin-left: 10px
-        max-width: 7vh
+        max-width: 2.2rem
+        max-height: 2.2rem
 
   section:last-child
-    width: 50%
+    // width: 50%
     display: flex
     justify-content: center
     align-items: center
 
     h1
-      word-break: break-all
-      max-width: 80%
+      // max-width: 80%
 
 .table
   height: 84Vh
@@ -83,6 +85,12 @@ footer
   header
     font-size: 1.7vw
 
+    section:first-child
+      div:last-child
+        img
+          max-width: 1.7vw
+          max-height: 1.7vw
+
   .table
     table
       font-size: 1.5vw
@@ -97,6 +105,12 @@ footer
 @media only screen and (max-width: 1500px)
   header
     font-size: 1.7rem
+
+    section:first-child
+      div:last-child
+        img
+          max-width: 1.7rem
+          max-height: 1.7rem
 
   .table
     table
@@ -118,6 +132,12 @@ footer
   header
     font-size: 1.5rem
 
+    section:first-child
+      div:last-child
+        img
+          max-width: 1.5rem
+          max-height: 1.5rem
+
   .table
     table
       font-size: 1.4rem
@@ -136,6 +156,18 @@ footer
   header
     font-size: 1.3rem
 
+    section:first-child
+
+      #logo
+
+        img
+          max-width: 7rem
+          
+      div:last-child
+        img
+          max-width: 1.3rem
+          max-height: 1.3rem
+
   .table
     table
       font-size: 1.2rem
@@ -150,18 +182,27 @@ footer
 @media only screen and (max-width: 700px)
   header
     font-size: 1.1rem
-    padding-left: 0.5rem
+    padding: 0.5rem
 
-    section:first-child
-      img
-        margin-left: 10px
-        max-width: 5vh
+    #sectionHeader
+      width: 100% !important
 
-    section:last-child
-      justify-content: end
-      
-      h1
-        padding-right: 10px
+      #logo
+        max-width: 40%
+        margin: 10px
+        img
+          // max-width: 10rem
+          // margin-left: 10px
+
+      >div:last-child
+        width: 50%
+        flex-direction: column-reverse !important
+        
+        div
+          width: 100%
+          display: flex 
+          justify-content: center
+          align-items: center
 
   .table
     table
