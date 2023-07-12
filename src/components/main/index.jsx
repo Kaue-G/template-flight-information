@@ -32,7 +32,7 @@ function Main() {
                 <div>
                   <div>
                     <h1>{airlineInformation.departuresOrArrivals}</h1>
-                    <img src={`assets/${planePicture}.png`} alt="" />
+                    <img src={`./assets/${planePicture}.png`} alt="" />
                   </div>
                   <div>
                     <h1>{airlineInformation.airportName}</h1>
