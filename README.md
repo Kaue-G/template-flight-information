@@ -57,7 +57,7 @@ Flights [...]
 
 ## Getting started
 ```
-  git clone https://github.com/dsplay/template-countdown.git my-awesome-template
+  git clone https://github.com/dsplay/template-flight-information.git my-awesome-template
   cd my-awesome-template
   rm -rf .git
   npm install
